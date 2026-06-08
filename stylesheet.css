@@ -116,7 +116,7 @@ body{
 .intro-animada{
     animation: FadeIn 0.8s ease-in;
 }
-/* seção SOBRE */
+
 #sobre .container-principal{
     display: flex;
     flex-direction: column;
@@ -202,15 +202,15 @@ body{
 }
 
 .badges-galeria img {
-    width: clamp(100px, 12vw, 140px); /* responsivo */
+    width: clamp(100px, 12vw, 140px);
     height: auto;
     transition: transform 0.2s ease-in-out;
 }
 
 .badges-galeria img:hover {
-    transform: scale(1.1); /* leve destaque ao passar o mouse */
+    transform: scale(1.1);
 }
-/* seção PROJETOS */
+
 #projetos .container-principal {
     display: flex;
     flex-direction: column;
@@ -282,7 +282,7 @@ body{
 #projetos .projeto-card a:hover{
     background: #af5cdf;
 }
-/* Botão voltar */
+
 .voltar {
     position: fixed;
     top: 20px;
@@ -293,7 +293,7 @@ body{
     height: auto;
     z-index: 9999;
 }
-/* SPA */
+
 .pagina {
     display: none;
     width: 100%;
@@ -304,7 +304,7 @@ body{
 .ativo {
     display: block;
 }
-/* animações */
+
 @keyframes shrink {
     from { transform: scale(1); }
     to { transform: scale(0.9); }
@@ -314,7 +314,7 @@ body{
     from{ opacity: 0; }
     to{ opacity: 1; }
 }
-/* Responsividade */
+
 @media (max-width: 1024px) {
     .container-principal {
         flex-direction: column;
