@@ -1,0 +1,369 @@
+html{
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: transparent;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: linear-gradient(45deg, #000000 20%,  #020202 30%, #0b0b0b 50%);
+    background-attachment: fixed;
+    background-size: 500%;
+    animation: backgroundAnimation 20s infinite ease;
+}
+
+@keyframes backgroundAnimation{
+    0%, 100%{ background-position: 0% 50%; }
+    50%{ background-position: 100% 50%; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.container-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    gap: 3%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.container-foto{
+    display: flex;
+    justify-content: center;
+}
+
+.container-foto img{
+    width: clamp(220px, 38vw, 420px);
+    border-radius: 50%;
+    height: auto;
+}
+
+.container-informacoes{
+    width: 35%;
+    max-width: 500px;
+    font-family: "Quicksand";
+    margin-top: -3%;
+}
+
+.container-informacoes h1{
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    color: white;
+    font-weight: 400;
+}
+
+.container-informacoes p{
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    color: rgb(218, 218, 218);
+    font-weight: 100;
+    width: 90%;
+}
+
+.container-informacoes-externos{
+    display: flex;
+    gap: 12px;
+    padding: 7%;
+    margin-left: 0;
+    justify-content: center;
+}
+
+.container-informacoes-externos img{
+    width: clamp(24px, 4vw, 36px);
+    height: auto;
+    filter: invert(100%);
+    transition: transform 0.2s ease-in-out;
+}
+
+.container-informacoes-externos img:hover {
+    transform: scale(1.1);
+}
+
+.container-informacoes-botoes{
+    display: flex;
+    gap: 10%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-informacoes-botoes .sobre,
+.container-informacoes-botoes .projetos{
+    background-color: #fff;
+    min-width: 120px;
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-family: "Quicksand";
+    font-weight: 100;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    color: black;
+}
+
+.container-informacoes-botoes .sobre:hover,
+.container-informacoes-botoes .projetos:hover{
+    animation: shrink 0.2s ease-in-out forwards;
+}
+
+.intro-animada{
+    animation: FadeIn 0.8s ease-in;
+}
+/* seção SOBRE */
+#sobre .container-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    gap: 2rem;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+#sobre .container-foto{
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#sobre .container-foto img{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#sobre .container-informacoes{
+    width: 90%;
+    max-width: 600px;
+    font-family: "Quicksand";
+    text-align: center;
+}
+
+#sobre .container-informacoes p{
+    margin-left: 0;
+    text-align: justify;
+    width: 100%;
+}
+
+#sobre .container-informacoes-botoes{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.linguagens-imagens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;      
+    flex-wrap: wrap;
+}
+
+.linguagens-imagens img {
+    width: 60px;      
+    height: auto;
+    max-width: 100%; 
+    transition: transform 0.2s ease-in-out;
+}
+
+.linguagens-imagens img:hover {
+    transform: scale(1.1);
+}
+
+.badges {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.badges h1 {
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    color: white;
+    font-weight: 400;
+    font-family: "Quicksand";
+}
+
+.badges-galeria {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.badges-galeria img {
+    width: clamp(100px, 12vw, 140px); /* responsivo */
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.badges-galeria img:hover {
+    transform: scale(1.1); /* leve destaque ao passar o mouse */
+}
+/* seção PROJETOS */
+#projetos .container-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#projetos {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+#projetos h1 {
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    color: white;
+    font-weight: 400;
+    font-family: "Quicksand";
+}
+
+#projetos  .projetos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#projetos .projeto-card {
+    background: #212121;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+#projetos .projeto-card h3{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-family: "Quicksand";
+    color: white;
+}
+
+#projetos .projeto-card p{
+    font-size: 0.95rem;
+    font-weight: lighter;
+    font-family: "Quicksand";
+    color: #a4a4a4;
+    text-align: left;
+}
+
+#projetos .projeto-card a{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-family: "Quicksand";
+    color: white;
+    background: #6a2890;
+    align-self: center;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background 0.2s ease-in-out;
+}
+
+#projetos .projeto-card a:hover{
+    background: #af5cdf;
+}
+/* Botão voltar */
+.voltar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    filter: invert(100%);
+    width: 40px;
+    height: auto;
+    z-index: 9999;
+}
+/* SPA */
+.pagina {
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.ativo {
+    display: block;
+}
+/* animações */
+@keyframes shrink {
+    from { transform: scale(1); }
+    to { transform: scale(0.9); }
+}
+
+@keyframes FadeIn {
+    from{ opacity: 0; }
+    to{ opacity: 1; }
+}
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container-principal {
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+    }
+
+    .container-informacoes {
+        width: 90%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .container-informacoes p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .container-informacoes-externos {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-foto img {
+        width: 80%;
+        max-width: 180px;
+    }
+
+    .container-informacoes h1 {
+        font-size: 1.8rem;
+    }
+
+    .container-informacoes p {
+        font-size: 1rem;
+    }
+
+    .container-informacoes-botoes {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .container-informacoes-botoes .sobre,
+    .container-informacoes-botoes .projetos {
+        width: 80%;
+    }
+
+    .voltar {
+        width: 30px;
+    }
+}

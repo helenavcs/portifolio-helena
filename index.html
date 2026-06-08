@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helena Vitória Portifólio</title>
+    <link rel="stylesheet" href="stylesheet.css"> <!--css-->
+    <link rel="icon" href="img/favicon/skull6.gif"> <!--favicon-->
+    <script src="script.js"></script>
+    <!--Poiret One-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <!--Quicksand-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+<body>
+    <main class="intro-animada">
+    <div id="index" class="pagina ativo">
+      <div class="container-principal"> <!--Container global, abriga todos os outros-->
+          <div class="container-foto">  <!--Container da foto de perfil-->
+            <img src="img/perfil/foto.jpeg" alt="Foto de Perfil" oncontextmenu="return false;" draggable="false">
+          </div>
+
+          <div class="container-informacoes">
+            <h1>Helena Vitória</h1>
+              <p>Atuo como Desenvolvedora Front-End Júnior, com foco em criar interfaces responsivas e funcionais. 
+                Domino HTML, CSS e JavaScript, estou em constante aprendizado de 
+                frameworks e boas práticas modernas para entregar experiências digitais de qualidade.</p>
+
+                  <div class="container-informacoes-externos">
+                      <a href="https://www.linkedin.com/in/helena-carvalho-61a9193a5/" target="_blank">
+                        <img src="img/svg/linkedin.svg" oncontextmenu="return false;" draggable="false">
+                      </a>
+                      <a href="https://github.com/helenavcs" target="_blank">
+                        <img src="img/svg/github.svg" oncontextmenu="return false;" draggable="false">
+                      </a>
+                      <a href="#" target="_blank">
+                        <img src="img/svg/envelope.svg" oncontextmenu="return false;" draggable="false">
+                      </a>
+                  </div>  
+
+            <div class="container-informacoes-botoes"> <!--Container dos botoes-->
+              <a class="sobre" href="#sobre" onclick="mostrarPagina('sobre')">Sobre</a>
+              <a class="projetos" href="#projetos" onclick="mostrarPagina('projetos')">Projetos</a>
+            </div>
+
+          </div>
+
+      </div><!--fim de container principal-->
+    </div> <!--fim de id="index"-->
+
+    <div id="sobre" class="intro-animada pagina"> <!--inicio de id="sobre"-->
+      <div class="container-principal">
+
+      <a href="#index" onclick="mostrarPagina('index')">
+        <img class="voltar" src="img/svg/arrow-left.svg" alt="Botão Voltar" oncontextmenu="return false;" draggable="false">
+      </a>
+
+        <div class="container-foto">  <!--Container da foto de perfil-->
+            <img src="img/perfil/foto.jpeg" alt="Foto de Perfil" oncontextmenu="return false;" draggable="false">
+          </div>
+
+          <div class="container-informacoes">
+            <h1>Sobre Mim</h1>
+              <div class="linguagens-imagens">
+                <img src="img/svg/html-icon.svg" alt="Icone HTML" oncontextmenu="return false;" draggable="false">
+                <img src="img/svg/css-icon.svg" alt="Icone CSS" oncontextmenu="return false;" draggable="false">
+                <img src="img/svg/javascript-icon.svg" alt="Icone JavaScript" oncontextmenu="return false;" draggable="false">
+                <img src="img/svg/react.png" alt="Icone Python" oncontextmenu="return false;" draggable="false">
+                <img src="img/svg/python-icon.svg" alt="Icone Python" oncontextmenu="return false;" draggable="false">
+              </div>
+            <p style="text-indent: 20px;">
+              Sou estudante da Faculdade de Tecnologia de Franco da Rocha - Giuliano Cecchettini (FATEC) e
+              curso Desenvolvimento de Software Multiplataforma. Atuo com Desenvolvimento Front-End Júnior, 
+              com sólida base em <strong>HTML, CSS</strong> e <strong>JavaScript</strong>,
+              tenho experiência prática em projetos utilizando <strong>React</strong> para criação de interfaces dinâmicas
+              e responsivas.
+            </p>
+
+            <p style="text-indent: 20px;">
+              Também possuo conhecimentos em <strong>Python</strong>, incluindo o desenvolvimento de 
+              interfaces gráficas com <strong>Tkinter</strong>, o que amplia minha visão sobre diferentes ramos da programação.
+            </p>  
+
+            <p style="text-indent: 20px;">
+              Tenho experiência e noções em <strong>UX</strong> e <strong>UI</strong>, aplicando conceitos de usabilidade e design para desenvolver
+              soluções digitais intuitivas e funcionais. Estou em constante aprendizado e motivada a evoluir
+              profissionalmente, contribuindo em projetos que valorizem a experiência do usuário e boas práticas
+              de desenvolvimento.
+            </p>
+
+            <section class="badges">
+              <h1>Selos de Proficiência</h1>
+              <div class="badges-galeria">
+
+              <a href="https://badge.cps.sp.gov.br//view.aspx?d5febc41-93ba-4dae-bd58-43dee9ccb4da" target="_blank">
+                <img src="img/badges/badge frontend fate.png" alt="Badge FrontEnd FATEC" oncontextmenu="return false;" draggable="false">
+              </a>
+              <a href="https://www.credly.com/badges/be4d859f-1487-4f57-a8fb-d627ad243733/public_url" target="_blank">
+                <img src="img/badges/html-essentials.png" alt="Badge HTML5" oncontextmenu="return false;" draggable="false">
+              </a>
+              <a href="https://www.credly.com/badges/9ad2e954-eff5-4e97-a5a4-c03613dfce9d/public_url" target="_blank">
+                <img src="img/badges/css-essentials.png" alt="Badge CSS3" oncontextmenu="return false;" draggable="false">
+              </a>
+              <a href="https://www.credly.com/badges/082dab1f-aa23-4314-b4e2-b281d2d35b97/public_url" target="_blank">
+                <img src="img/badges/javascript-essentials-1.png" alt="Badge JavaScript1" oncontextmenu="return false;" draggable="false">
+              </a>
+              <a href="https://www.credly.com/badges/26ce8c67-2915-4a1b-a934-feae76f5142d/public_url" target="_blank">
+                <img src="img/badges/javascript-essentials-2.png" alt="Badge JavaScript2" oncontextmenu="return false;" draggable="false">
+              </a>
+              <a href="https://www.credly.com/badges/17348fd9-6d31-4c9a-8027-c3c51a4f13a9/public_url" target="_blank">
+                <img src="img/badges/python-essentials-1.1.png" alt="Badge Python" oncontextmenu="return false;" draggable="false">
+              </a>  
+              </div>
+            </section>
+
+
+            <div class="container-informacoes-botoes">
+            <a class="projetos" href="#projetos" onclick="mostrarPagina('projetos')">Projetos</a>
+            </div>
+          </div>
+          </div>
+    </div><!--fim de id="sobre"-->
+<!--..............................................................-->
+<div id="projetos" class="intro-animada pagina"> <!--inicio de id="sobre"-->
+      <div class="container-principal">
+
+      <a href="#index" onclick="mostrarPagina('index')">
+        <img class="voltar" src="img/svg/arrow-left.svg" alt="Botão Voltar" oncontextmenu="return false;" draggable="false">
+      </a>
+
+  <h1>Projetos</h1>
+  <div class="projetos-container">
+    
+    <div class="projeto-card">
+      <img src="img/projetos-card/catalogo-livro.png" alt="Biblioteca Digital" oncontextmenu="return false;" draggable="false">
+      <h3>Biblioteca Digital</h3>
+      <p>Projeto em Python que implementa um catálogo digital de livros, utilizando SQLite para armazenamento e Tkinter para interface gráfica.</p>
+      <a href="https://github.com/helenavcs/biblioteca-digital" target="_blank">Ver no GitHub</a>
+    </div>
+
+    <div class="projeto-card">
+      <img src="img/projetos-card/gerador-esquema-cores.png" alt="Gerador de Esquemas Cromáticos" oncontextmenu="return false;" draggable="false">
+      <h3>Gerador de Esquemas Cromáticos</h3>
+      <p>Programa em Python que gera esquemas cromáticos a partir de uma cor escolhida pelo usuário, exibindo combinações de forma simples e visual.</p>
+      <a href="https://github.com/helenavcs/gerador-esquemas-cromaticos" target="_blank">Ver no Gitub</a>
+    </div>
+
+    <div class="projeto-card">
+      <img src="img/projetos-card/minijogo.png" alt="Minigame Starchaser" oncontextmenu="return false;" draggable="false">
+      <h3>Minigame Starchaser</h3>
+      <p>Minigame interativo, conecte estrelas para formar constelações, criado com HTML, CSS e JavaScript.</p>
+      <a href="https://helenavcs.github.io/minigame-starchaser/" target="_blank">Ver no GitHub Pages</a>
+    </div>
+
+    <div class="projeto-card">
+      <img src="img/projetos-card/floralis-website.png" alt="Minigame Starchaser" oncontextmenu="return false;" draggable="false">
+      <h3>Floralis Website</h3>
+      <p>Website de uma floricultura fictícia, criado com o propósito de ser utilizado no portfólio e para demonstrar habilidades em HTML, CSS e JavaScript.</p>
+      <a href="https://helenavcs.github.io/floralis-web/" target="_blank">Ver no GitHub Pages</a>
+    </div>
+
+    <div class="projeto-card">
+      <img src="img/projetos-card/momentum-website.png" alt="Minigame Starchaser" oncontextmenu="return false;" draggable="false">
+      <h3>Momentum Website</h3>
+      <p>Website fictício de uma empresa de arquitetura e design de ambientes, desenvolvido para compor portfólio e demonstrar habilidades em HTML, CSS e JavaScript.</p>
+      <a href="https://helenavcs.github.io/momentum-web/" target="_blank">Ver no GitHub Pages</a>
+    </div>
+
+  </div>
+
+            <div class="container-informacoes-botoes"> <!--Container dos botoes-->
+              <a class="sobre" href="#sobre" onclick="mostrarPagina('sobre')">Sobre</a>
+            </div>
+
+</div>
+</div>
+</div>
+
+<!--................................................................-->
+
+    </main>
+</body>
+</html>
